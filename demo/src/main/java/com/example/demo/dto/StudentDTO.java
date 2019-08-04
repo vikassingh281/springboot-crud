@@ -1,5 +1,6 @@
 package com.example.demo.dto;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -8,9 +9,14 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 public class StudentDTO {
-	   private String firstName;
-	   private String lastName;
-	   private String department;
-	   private String createdDate;
-	   private String updatedDate;
+	   
+	   @JsonProperty("firstName")
+	   private String FirstName;
+	   
+	   @JsonProperty("firstName")
+	   private String LastName;
+	   
+	   @JsonProperty("firstName")
+	   private String Department;
+	   
 }

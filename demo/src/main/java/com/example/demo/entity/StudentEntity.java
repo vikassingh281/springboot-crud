@@ -16,24 +16,24 @@ import javax.persistence.*;
 @Setter
 @NoArgsConstructor
 public class StudentEntity {
-
-    @Id
-    @Column(name = "id")
-    private String uniqueId;
-
-    @Column(name = "firstname")
-    private String firstName;
-
-    @Column(name = "lastname")
-    private String lastName;
-
-    @Column(name = "department")
-    private String department;
-
-    @Column(name = "createddate")
-    private String createdDate;
-
-    @Column(name = "updateddate")
-    private String updatedDate;
-
+	   
+	   @Id
+	   @Column(name = "id", nullable = false, length = 36)
+	   private String uniqueId;
+	   
+	   @Column(name = "firstname", nullable = false, length = 100)
+	   private String firstName;
+	   
+	   @Column(name = "lastname", nullable = true, length = 100)
+	   private String lastName;
+	   
+	   @Column(name = "department", nullable = false, length = 100)
+	   private String department;
+	   
+	   @Column(name = "createddate", nullable = false, length = 100)
+	   private String createdDate;
+	   
+	   @Column(name = "updateddate", nullable = false, length = 100)
+	   private String updatedDate;
+	   
 }
